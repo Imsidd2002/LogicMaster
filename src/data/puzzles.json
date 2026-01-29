@@ -1,0 +1,613 @@
+[
+    {
+        "id": "mislabeled-jars",
+        "title": "Mislabeled Jars",
+        "description": "You have three jars that are all mislabeled. One contains Apples, another Oranges, and the third Apples and Oranges. You cannot see inside. You can take one fruit from one jar. How can you label all jars correctly?",
+        "tags": [
+            "Logic",
+            "Deduction"
+        ],
+        "difficulty": "Easy",
+        "hint": "The key is that ALL jars are mislabeled. Start with the 'Apples and Oranges' jar.",
+        "solution": "Pick from the jar labeled 'Apples & Oranges'.\n\nSince it is mislabeled, it must contain ONLY Apples or ONLY Oranges.\n1. Suppose you pull an Apple. Then this jar is 'Apples'.\n2. The jar labeled 'Oranges' cannot be Oranges (mislabeled) and cannot be Apples (already found). So it must be 'Apples & Oranges'.\n3. The last jar (labeled 'Apples') must be Oranges."
+    },
+    {
+        "id": "river-crossing",
+        "title": "Wolf, Goat, and Cabbage",
+        "description": "A farmer needs to cross a river with a wolf, a goat, and a cabbage. He has a boat that can only hold himself and one other item. If left alone, the wolf will eat the goat, and the goat will eat the cabbage. How can he cross them all safely?",
+        "tags": [
+            "Logic",
+            "Classic"
+        ],
+        "difficulty": "Easy",
+        "hint": "The goat is the key problem. It can't be left with the wolf or the cabbage. You might need to bring something back.",
+        "solution": "1. Take the Goat across. (Wolf, Cabbage left)\n2. Return alone.\n3. Take the Wolf across.\n4. Return with the Goat. (Critical step!)\n5. Take the Cabbage across.\n6. Return alone.\n7. Take the Goat across."
+    },
+    {
+        "id": "three-ants",
+        "title": "Three Ants on a Triangle",
+        "description": "Three ants are sitting at the three corners of an equilateral triangle. Each ant randomly picks a direction and starts moving along the edge of the triangle. What is the probability that none of the ants collide?",
+        "tags": [
+            "Probability"
+        ],
+        "difficulty": "Easy",
+        "hint": "For them not to collide, they must all move in the SAME direction (all clockwise or all counter-clockwise).",
+        "solution": "Each ant has 2 choices (Clockwise or Counter-Clockwise).\nTotal combinations = 2 * 2 * 2 = 8.\n\nNon-colliding combinations:\n1. All Clockwise (C, C, C)\n2. All Counter-Clockwise (CC, CC, CC)\n\nProbability = 2 / 8 = 1/4 or 25%."
+    },
+    {
+        "id": "bird-train",
+        "title": "The Bird and the Trains",
+        "description": "Two trains, separated by 80km, are running towards each other on the same track at 40kmph each. A bird flies from one train to the other at 100kmph, turning around instantly upon reaching the other train. It repeats this until the trains collide. What is the total distance the bird travels?",
+        "tags": [
+            "Math",
+            "Classic"
+        ],
+        "difficulty": "Easy",
+        "hint": "Don't calculate the segments. Think about TIME.",
+        "solution": "1. Relative speed of trains = 40 + 40 = 80 km/h.\n2. Time until collision = Distance / Speed = 80km / 80km/h = 1 hour.\n3. The bird flies for exactly 1 hour at 100kmph.\n\nTotal distance = 100km."
+    },
+    {
+        "id": "gender-ratio",
+        "title": "Boy vs Girl Country",
+        "description": "In a country where couples only want boys, they keep having children until they have a boy. If they have a girl, they try again. If they have a boy, they stop. What is the proportion of boys to girls in the country?",
+        "tags": [
+            "Probability",
+            "Logic"
+        ],
+        "difficulty": "Easy",
+        "hint": "Consider the expected number of boys and girls for a large number of couples (e.g., C couples).",
+        "solution": "The ratio is 1:1.\n\nImagine C couples.\n- Round 1: C babies. 50% Boys (stopped), 50% Girls (continue).\n- Round 2: C/2 couples have babies. 50% Boys, 50% Girls.\n- Round 3: C/4 couples...\n\nTotal Boys = C/2 + C/4 + C/8 ... = C\nTotal Girls = C/2 + C/4 + C/8 ... = C\n\nExact ratio is 1:1."
+    },
+    {
+        "id": "monty-hall",
+        "title": "The Monty Hall Problem",
+        "description": "Suppose you're on a game show, and you're given the choice of three doors: Behind one door is a car; behind the others, goats. You pick a door, say No. 1, and the host, who knows what's behind the doors, opens another door, say No. 3, which has a goat. He then says to you, \"Do you want to pick door No. 2?\" Is it to your advantage to switch your choice?",
+        "tags": [
+            "Probability",
+            "Classic"
+        ],
+        "difficulty": "Medium",
+        "hint": "Listing all possible outcomes helps. Consider the probability of your initial pick being correct vs incorrect.",
+        "solution": "You should ALWAYS switch. \n\n1. When you first pick, you have a 1/3 chance of getting the car and a 2/3 chance of getting a goat.\n2. If you picked the car (1/3), switching loses.\n3. If you picked a goat (2/3), the host is forced to reveal the other goat. Switching leads you to the car.\n\nThus, switching doubles your chances of winning from 1/3 to 2/3."
+    },
+    {
+        "id": "two-guards",
+        "title": "Heaven and Hell",
+        "description": "You are at a fork in the road. One path leads to Heaven (freedom), the other to Hell (eternal doom). There are two guards, one at each path. One always tells the truth, and the other always lies. You do not know which is which. You can ask only one question to one guard. What question do you ask to find the path to Heaven?",
+        "tags": [
+            "Logic",
+            "Classic"
+        ],
+        "difficulty": "Medium",
+        "hint": "Try to construct a scenario where the double negative (a lie about a lie) cancels out. Ask what the OTHER guard would say.",
+        "solution": "Ask either guard: \"If I were to ask the other guard which door leads to Heaven, what would he say?\"\n\n- If you ask the truthful guard, he will truthfully tell you the liar's lie (which points to Hell).\n- If you ask the liar, he will lie about the truthful guard's answer (pointing to Hell).\n\nIn both cases, the answer points to Hell. So, you simply take the OTHER path."
+    },
+    {
+        "id": "burning-ropes",
+        "title": "Burning Ropes",
+        "description": "You have two ropes. Each takes exactly 60 minutes to burn from one end to the other. However, they do not burn at a constant rate (e.g., the first half might burn in 10 minutes). How do you measure exactly 45 minutes?",
+        "tags": [
+            "Lateral Thinking"
+        ],
+        "difficulty": "Medium",
+        "hint": "You can light multiple ends at once to speed up the burning.",
+        "solution": "1. Light Rope A at both ends and Rope B at one end.\n2. When Rope A burns out completely, exactly 30 minutes have passed.\n3. At that moment, light the other end of Rope B.\n4. Rope B has 30 minutes of fuel left, but since it's now lit from both ends, it will burn out in 15 minutes.\n\nTotal time = 30 + 15 = 45 minutes."
+    },
+    {
+        "id": "three-switches",
+        "title": "Three Light Bulbs",
+        "description": "There are three switches downstairs and three light bulbs in the attic. You can manipulate the switches as much as you want, but you can only go up to the attic once. How do you determine which switch controls which bulb?",
+        "tags": [
+            "Lateral Thinking"
+        ],
+        "difficulty": "Medium",
+        "hint": "Light bulbs emit light AND heat.",
+        "solution": "1. Turn Switch 1 ON and leave it for 5 minutes.\n2. Turn Switch 1 OFF and quickly turn Switch 2 ON.\n3. Run upstairs.\n\n- The bulb that is ON is controlled by Switch 2.\n- The bulb that is OFF but WARM is controlled by Switch 1.\n- The bulb that is OFF and COLD is controlled by Switch 3."
+    },
+    {
+        "id": "bridge-torch",
+        "title": "Bridge and Torch Problem",
+        "description": "Four people need to cross a rickety bridge at night. They have one torch. The bridge is too dangerous to cross without a torch, and it is only strong enough to support two people at a time. The travelers take 1, 2, 5, and 10 minutes to cross, respectively. When two people cross, they travel at the speed of the slower person. What is the minimum time needed for all to cross?",
+        "tags": [
+            "Optimization"
+        ],
+        "difficulty": "Medium",
+        "hint": "Don't just use the fastest person to escort everyone. Think about how to move the two slowest people across together.",
+        "solution": "Minimum time: 17 minutes.\n\n1. 1 and 2 cross (2 mins).\n2. 1 returns (1 min).\n3. 5 and 10 cross (10 mins) - Strategy: Move slowest together.\n4. 2 returns (2 mins).\n5. 1 and 2 cross (2 mins).\n\nTotal: 2 + 1 + 10 + 2 + 2 = 17 mins."
+    },
+    {
+        "id": "coin-split",
+        "title": "Blind Coin Split",
+        "description": "You are blindfolded. There are 10 coins on the table: 5 Heads up, 5 Tails up. You cannot feel or see which side is up. You can flip any number of coins. How do you separate them into two piles with the same number of Heads?",
+        "tags": [
+            "Lateral Thinking",
+            "Math"
+        ],
+        "difficulty": "Medium",
+        "hint": "Just split them into two equal piles and do something to one pile.",
+        "solution": "1. Split the 10 coins into two piles of 5 coins each.\n2. Flip ALL coins in one of the piles.\n\nMath:\nLet Pile A have 'x' heads. It must have '5-x' tails.\nSince total heads = 5, Pile B must have '5-x' heads.\nIf you flip Pile A, the 'x' heads become tails, and '5-x' tails become heads.\nSo Pile A now has '5-x' heads, which matches Pile B."
+    },
+    {
+        "id": "water-jug-7l",
+        "title": "7 Liters from 4 and 5",
+        "description": "You have a 4L jug and a 5L jug. You have an unlimited water supply. How do you measure exactly 7 Liters?",
+        "tags": [
+            "Logic",
+            "Math"
+        ],
+        "difficulty": "Medium",
+        "hint": "You need to store water in a third container or bucket.",
+        "solution": "1. Fill 5L, pour into 4L. (1L left in 5L jug).\n2. Pour the 1L into the bucket.\n3. Empty 4L.\n4. Refill 5L, pour into 4L. (1L left in 5L jug).\n5. Pour the 1L into the bucket (Bucket now has 2L).\n6. Fill 5L and pour directly into bucket (2L + 5L = 7L)."
+    },
+    {
+        "id": "cake-cutting",
+        "title": "8 Slices, 3 Cuts",
+        "description": "How to cut a cake into 8 equal pieces with exactly 3 straight cuts?",
+        "tags": [
+            "Lateral Thinking",
+            "3D Thinking"
+        ],
+        "difficulty": "Medium",
+        "hint": "Think in 3 dimensions.",
+        "solution": "1. Cut horizontally through the center.\n2. Cut vertically through the center.\n3. Stacking the pieces? Or just cut horizontally through the SIDE of the cake (cross-section) like slicing a bagel.\n\nStandard solution: One horizontal cut (splitting top and bottom) and two vertical cuts in a cross shape."
+    },
+    {
+        "id": "defective-stack",
+        "title": "The Defective Stack",
+        "description": "You have 10 stacks of 10 coins each. Normal coins weigh 10g. One stack is defective and its coins weigh 9g. You have a digital scale. What is the minimum number of weighings to find the defective stack?",
+        "tags": [
+            "Logic",
+            "Math"
+        ],
+        "difficulty": "Medium",
+        "hint": "Weights are additive. Can you make a unique sum for each stack?",
+        "solution": "1 weighing.\n\nTake 1 coin from Stack 1, 2 from Stack 2, ... 10 from Stack 10.\nTotal coins = 55.\nExpected weight = 550g.\nActual weight will be less. The difference indicates the stack number.\nExample: If weight is 549g (1g less), Stack 1 is defective. If 540g (10g less), Stack 10 is defective."
+    },
+    {
+        "id": "sand-timers",
+        "title": "4 and 7 Minute Timers",
+        "description": "You have a 4-minute hourglass and a 7-minute hourglass. How do you measure exactly 9 minutes?",
+        "tags": [
+            "Logic",
+            "Timing"
+        ],
+        "difficulty": "Medium",
+        "hint": "You can flip them over while they are running or just finished.",
+        "solution": "1. Start both 4 and 7.\n2. When 4 ends, flip it immediately. (4 mins elapsed)\n3. When 7 ends, flip it immediately. (7 mins elapsed. 4-timer has run for 3 mins of its second cycle)\n4. When 4-timer ends (8 mins total), the 7-timer has run for 1 minute.\n5. Flip the 7-timer NOW. It has 1 minute of sand collected at the bottom, so it will run for 1 minute.\n6. When it ends, exactly 9 minutes have passed."
+    },
+    {
+        "id": "last-ball-color",
+        "title": "Last Ball in the Bag",
+        "description": "A bag has 20 Blue and 13 Red balls. You pull out 2 balls. If same color -> replace with Blue. If different -> replace with Red. You repeat until 1 ball remains. What color is it?",
+        "tags": [
+            "Logic",
+            "Parity"
+        ],
+        "difficulty": "Medium",
+        "hint": "Check the parity (odd/even) of the Red balls.",
+        "solution": "Red.\n\n- Two Blue removed: 0 Red change.\n- Two Red removed: -2 Red change (replaced by Blue).\n- One Blue, One Red: -1 Red, +1 Red (replacement) -> 0 Red change.\n\nThe number of Red balls always changes by 0 or 2. So the parity (odd/even) never changes.\nStarted with 13 (Odd). Must end with Odd.\nThe only state with 1 ball is 1 Red (Odd) or 1 Blue (0 Red = Even).\nSince we need Odd parity, the last ball must be Red."
+    },
+    {
+        "id": "egg-drop",
+        "title": "The Egg Dropping Puzzle",
+        "description": "You are given two identical eggs and a 100-story building. You need to determine the highest floor from which an egg can be dropped without breaking, minimizing the worst-case moves.",
+        "tags": [
+            "Optimization",
+            "Strategy"
+        ],
+        "difficulty": "Hard",
+        "hint": "Think about balancing the risk. If you drop from floor 10 and it breaks, you only have one egg left to check floors 1-9 sequentially.",
+        "solution": "14 drops.\n\nThe logic is to minimize the worst case. Let 'n' be the first floor you drop from. If it breaks, you have to test n-1 floors linearly. Total drops = 1 + (n-1) = n.\nIf it doesn't break, you jump up by 'n-1' floors next.\nSum: n + (n-1) + ... + 1 >= 100.\nn(n+1)/2 >= 100 => n ~ 14."
+    },
+    {
+        "id": "100-prisoners",
+        "title": "100 Prisoners & Drawers",
+        "description": "100 prisoners. 100 drawers. Each prisoner looks in 50 drawers to find their number. If ALL find it, they live. If ANY fail, they die. Best strategy?",
+        "tags": [
+            "Probability",
+            "Strategy"
+        ],
+        "difficulty": "Hard",
+        "hint": "The drawers form cycles. If you start with the drawer of your own number...",
+        "solution": "Strategy: Open the drawer labeled with your number. If it has number X inside, go to drawer X. Repeat.\n\nThis follows the 'cycle' of numbers. The prisoners win if there are no cycles longer than 50. The probability of this is approx 31%, which is infinitely better than random guessing."
+    },
+    {
+        "id": "camel-banana",
+        "title": "The Camel and Bananas",
+        "description": "Camel, 3000 bananas, 1000km. Carries 1000 max. Eats 1/km. Max bananas delivered?",
+        "tags": [
+            "Optimization",
+            "Hard"
+        ],
+        "difficulty": "Hard",
+        "hint": "Stockpile at intermediate points.",
+        "solution": "533 bananas.\n\n1. Transport 3000 -> 2000: Need 5 trips (3 forward, 2 back). Cost 5 bananas/km. Distance = 1000/5 = 200km. Left: 2000 bananas at 200km.\n2. Transport 2000 -> 1000: Need 3 trips. Cost 3/km. Distance = 1000/3 = 333km. Left: 1000 bananas at 533km.\n3. Transport 1000 -> End: 1 trip. Cost 1/km. Distance 467km. Left: 1000 - 467 = 533."
+    },
+    {
+        "id": "poisoned-wine",
+        "title": "1000 Bottles of Wine",
+        "description": "1000 bottles, 1 poisoned. 10 rats. Rats die in 24 hrs. You have 24 hrs to find the bottle.",
+        "tags": [
+            "Binary Logic"
+        ],
+        "difficulty": "Hard",
+        "hint": "Powers of 2. 2^10 = 1024.",
+        "solution": "Number bottles 1-1000 in binary.\nRat 1 drinks from all bottles with 1st bit set. Rat 2 from 2nd bit set, etc.\nAfter 24h, the combination of dead rats gives the binary number of the poisoned bottle."
+    },
+    {
+        "id": "blue-eyes",
+        "title": "The Blue-Eyed Islanders",
+        "description": "Island of perfect logicians. 100 have blue eyes. Can't see own eyes. 'At least one has blue eyes'. When do they leave?",
+        "tags": [
+            "Induction",
+            "Hard"
+        ],
+        "difficulty": "Hard",
+        "hint": "Start with 1 blue-eyed person, then 2, then 3. See the pattern.",
+        "solution": "On the 100th night, all 100 blue-eyed people leave together.\n\nInduction:\n- N=1: Leaves night 1.\n- N=2: See 1, wait. If he doesn't leave night 1, I must be blue. Both leave night 2.\n- ...\n- N=100: All leave night 100."
+    },
+    {
+        "id": "flashlight-batteries",
+        "title": "Faulty Batteries",
+        "description": "8 batteries, 4 work. Flashlight needs 2. Min pairs to test to guarantee light?",
+        "tags": [
+            "Logic",
+            "Optimization"
+        ],
+        "difficulty": "Hard",
+        "hint": "Circular testing is more efficient than random pairs.",
+        "solution": "7 trials.\n\nLabel A, B, C... H.\n1. Test AB, BC, AC. (If none work, then max 1 of A,B,C works).\n2. Test DE. (If no, max 2 of F,G,H work).\n3. Test with knowns/unknowns systematically. \n\nStandard simplified solution often cited is testing in groups but 7 is the rigorous max bound needed."
+    },
+    {
+        "id": "fastest-horses",
+        "title": "25 Horses, 3 Fastest",
+        "description": "25 horses, 5 tracks. No stopwatch. Find top 3 fastest horses. Min races?",
+        "tags": [
+            "Logic",
+            "Optimization"
+        ],
+        "difficulty": "Hard",
+        "hint": "Eliminate entire groups based on their fastest horse.",
+        "solution": "7 races.\n\n1. Race 5 groups of 5 (5 races). Determine winners A1, B1, C1, D1, E1.\n2. Race the winners (6th race). Assume order A1 > B1 > C1 > D1 > E1.\n   - A1 is fastest overall.\n   - E group is out. D group is out (D1 is 4th at best).\n   - C1 is 3rd best candidate. C2, C3 out.\n   - B1 is 2nd best candidate. B2 could be 3rd.\n   - A2 could be 2nd. A3 could be 3rd.\n3. Race A2, A3, B1, B2, C1 (7th race). Top 2 from this race are #2 and #3 overall."
+    },
+    {
+        "id": "prisoners-hats-parity",
+        "title": "Prisoners and Red/Blue Hats",
+        "description": "100 prisoners in line. Can see everyone in front. Hats are Red or Blue. Each guesses own hat starting from back. Mistakes = Death. Best strategy?",
+        "tags": [
+            "Logic",
+            "Parity"
+        ],
+        "difficulty": "Hard",
+        "hint": "Use the first person as a signal bearer.",
+        "solution": "99 prisoners are guaranteed to live.\n\nStrategy: The last person (who sees 99 heads) counts the Red hats. If odd, he says 'Red'. If even, 'Blue'.\n- He has 50% chance of survival.\n- Everyone else now knows the parity of Red hats in front of the line vs what the guy behind them saw.\n- Person 99 sees even/odd red hats in front. He compares with total parity signal. The difference tells him his own hat color."
+    },
+    {
+        "id": "drunken-passenger",
+        "title": "The Drunken Passenger",
+        "description": "100 seats. Passenger 1 takes a random seat. Everyone else sits in their assigned seat if empty, else random. Probability passenger 100 sits in seat 100?",
+        "tags": [
+            "Probability"
+        ],
+        "difficulty": "Hard",
+        "hint": "The fate of the last passenger is decided by who takes seat #1 or seat #100.",
+        "solution": "50% (1/2).\n\nConsider just Seat 1 and Seat 100. Any passenger picking a seat other than 1 or 100 effectively passes the turn.\nThe first time someone picks either 1 or 100, the game 'ends' for the last person.\n- If Seat 1 is picked, 100th person gets Seat 100.\n- If Seat 100 is picked, 100th person DOESN'T get Seat 100.\nSince random choice, both are equally likely."
+    },
+    {
+        "id": "josephus-survivor",
+        "title": "Josephus Problem",
+        "description": "N people in a circle. Shoot person to the left. Repeat until 1 survives. Position of survivor for N=100?",
+        "tags": [
+            "Math",
+            "Pattern"
+        ],
+        "difficulty": "Hard",
+        "hint": "Write N in binary, move the first digit to the end.",
+        "solution": "Position 73.\n\nFormula: Write N in binary. Move the most significant bit (leading 1) to the end (rotate left).\n100 in binary = 1100100.\nMove first '1' to end -> 1001001.\nConvert to decimal: 64 + 8 + 1 = 73."
+    },
+    {
+        "id": "lazy-susan-glasses",
+        "title": "Lazy Susan Glasses",
+        "description": "4 glasses on a spinning tray. Up or Down. Blindfolded. You can flip 2 glasses. Tray spins randomly. Algorithm to get all same way?",
+        "tags": [
+            "Logic",
+            "Algorithm"
+        ],
+        "difficulty": "Hard",
+        "hint": "You need to break symmetry. Diagonals vs Adjacents.",
+        "solution": "1. Flip diagonally opposite pair. (Ensures at least 2 are same).\n2. Flip adjacent pair. (If failed, now we have specific config).\n3. Flip diagonal.\n4. Flip adjacent.\n5. Flip diagonal.\n\nThis sequence covers all state transitions to force 'All Up' or 'All Down' state."
+    },
+    {
+        "id": "seven-colored-hats",
+        "title": "7 Prisoners, 7 Colors",
+        "description": "7 prisoners. 7 hat colors. See all others. Guess own color simultaneously. If ONE gets it right, all free.",
+        "tags": [
+            "Math",
+            "Modulo"
+        ],
+        "difficulty": "Hard",
+        "hint": "Modulo arithmetic. Each person guesses based on a different assumption of the Total Sum.",
+        "solution": "Assign colors 0-6.\nPrisoner 'i' guesses that (Sum of all colors) = i (mod 7).\nHe sees the sum of others (S_others). He guesses his color C such that (S_others + C) = i (mod 7).\nSince the actual Sum MUST be equal to equal to k (0 <= k <= 6) for some k, the prisoner assigned to k will be correct."
+    },
+    {
+        "id": "alien-survival",
+        "title": "Alien Population",
+        "description": "Alien does one of 4 things: Dies, Nothing, Splits(2), Splits(3). All equal prob. Probability species dies out?",
+        "tags": [
+            "Probability",
+            "Math"
+        ],
+        "difficulty": "Hard",
+        "hint": "Solve x = 1/4(1 + x + x^2 + x^3).",
+        "solution": "Sqrt(2) - 1 (approx 0.414).\n\nLet x be prob of extinction.\nx = 0.25*(1 + x + x^2 + x^3).\nSolving for x gives x=1 (always dies, rejected by mean growth > 1) or x=sqrt(2)-1."
+    },
+    {
+        "id": "twelve-balls-scale",
+        "title": "12 Balls, 3 Weighings",
+        "description": "12 balls. One is heavier OR lighter. Balance scale. 3 weighings to find it.",
+        "tags": [
+            "Logic",
+            "Complexity"
+        ],
+        "difficulty": "Hard",
+        "hint": "Weigh 4 vs 4. If equal, odd one is in the other 4. If not...",
+        "solution": "1. 1,2,3,4 vs 5,6,7,8.\n   - If Equal: Odd in 9,10,11,12. Test 9,10,11 vs 1,2,3 (known good). \n   - If Unequal (e.g., Left Heavy): Odd is 1,2,3,4(Heavy) or 5,6,7,8(Light).\n   - 2. Weigh 1,2,5 vs 3,6,10(known)...\n(Complex decision tree distinguishing Heavy vs Light states)."
+    },
+    {
+        "id": "einstein-riddle",
+        "title": "Einstein's Riddle",
+        "description": "5 houses, 5 colors, 5 nationalities, 5 drinks, 5 smokes, 5 pets. Who owns the Fish? (Based on a long list of clues).",
+        "tags": [
+            "Logic",
+            "Deduction"
+        ],
+        "difficulty": "Hard",
+        "hint": "Use a grid/table to map negative and positive constraints.",
+        "solution": "The German owns the Fish.\n\n(This is the standard solution to the 'Zebra Puzzle' / Einstein's Riddle variant)."
+    },
+    {
+        "id": "missing-dollar",
+        "title": "The Missing Dollar",
+        "description": "Three guests pay $30 for a room. The clerk realizes it's $25 and gives $5 to the bellhop. The bellhop keeps $2 and gives $1 back to each guest. Now each guest paid $9 (Total $27) + $2 bellhop kept = $29. Where is the missing dollar?",
+        "tags": [
+            "Logic",
+            "Math"
+        ],
+        "difficulty": "Easy",
+        "hint": "Don't add the bellhop's money to the guest's payment. Subtract it.",
+        "solution": "There is no missing dollar. The guests paid $27. The hotel got $25 and the bellhop got $2. $25 + $2 = $27. adding the $2 to the $27 is a fallacy."
+    },
+    {
+        "id": "farmer-will",
+        "title": "Farmer Will's Land",
+        "description": "A farmer has a square plot of land. He wants to divide it among his 4 sons so that each gets a piece of the same shape and size. However, he wants to keep 1/4 of the land for himself in one corner. How does he divide the remaining L-shaped land?",
+        "tags": [
+            "Visual",
+            "Geometry"
+        ],
+        "difficulty": "Medium",
+        "hint": "Divide the L-shape into small squares.",
+        "solution": "Divide the L-shape into 3 squares. Divide each of those 3 squares into 4 smaller squares. Now you have 12 small squares. Each son gets an L-shape made of 3 small squares."
+    },
+    {
+        "id": "hotel-keys",
+        "title": "The Hotel Keys",
+        "description": "A hotel has infinite rooms. All full. A new guest arrives. How do you fit him in?",
+        "tags": [
+            "Infinity",
+            "Math"
+        ],
+        "difficulty": "Medium",
+        "hint": "Hilbert's Hotel.",
+        "solution": "Move guest in Room 1 to Room 2, Room 2 to Room 3, and so on. Room N moves to N+1. Room 1 is now empty for the new guest."
+    },
+    {
+        "id": "poison-pills",
+        "title": "Poisonous Pills",
+        "description": "You have 5 jars of pills. One jar has poisoned pills weighing 9g, others are 10g. You have a scale. Min weighings?",
+        "tags": [
+            "Logic",
+            "Math"
+        ],
+        "difficulty": "Medium",
+        "hint": "Similar to the coins problem.",
+        "solution": "1 weighing. Take 1 pill from jar 1, 2 from jar 2, etc. Weigh them. The weight deviation tells you exactly which jar is poisoned."
+    },
+    {
+        "id": "counterfeit-coin-12",
+        "title": "12 Coins, 1 Counterfeit",
+        "description": "12 coins, one is different weight (lighter or heavier). 3 weighings on a balance scale to find it.",
+        "tags": [
+            "Logic",
+            "Hard"
+        ],
+        "difficulty": "Hard",
+        "hint": "4 vs 4 start.",
+        "solution": "Weigh 4 vs 4. If equal, odd is in last 4. If unequal, you know the heavy/light group direction. Then split 3 vs 3..."
+    },
+    {
+        "id": "birthday-paradox",
+        "title": "Two People, Same Birthday",
+        "description": "How many people do you need in a room to have a 50% chance that two share a birthday?",
+        "tags": [
+            "Probability"
+        ],
+        "difficulty": "Medium",
+        "hint": "It's much lower than 183.",
+        "solution": "23 people. The probability is calculated by 1 - (365/365 * 364/365 * ...)."
+    },
+    {
+        "id": "fox-goose-corn",
+        "title": "Fox, Goose, and Corn",
+        "description": "A man has a fox, a goose, and a sack of corn. He can only carry one across the river. Fox eats Goose, Goose eats Corn if left alone.",
+        "tags": [
+            "Logic",
+            "Classic"
+        ],
+        "difficulty": "Easy",
+        "hint": "Take the Goose first.",
+        "solution": "Take Goose. Return. Take Fox. Return with Goose. Leave Goose, take Corn. Return. Take Goose."
+    },
+    {
+        "id": "gold-chain",
+        "title": "Paying with a Gold Chain",
+        "description": "You have a chain of 7 gold links. You need to pay an employee 1 link per day for 7 days. You can only cut ONE link. How?",
+        "tags": [
+            "Lateral Thinking"
+        ],
+        "difficulty": "Medium",
+        "hint": "Trade links back and forth.",
+        "solution": "Cut the 3rd link. You now have pieces of size 1, 2, and 4 (the rest). Day 1: Give 1. Day 2: Give 2, take back 1. Day 3: Give 1. Day 4: Give 4, take back 1 and 2..."
+    },
+    {
+        "id": "rope-bridge-night",
+        "title": "Crossing the Bridge at Night",
+        "description": "4 people cross a bridge at night. 1 torch. Times: 1, 2, 5, 10 mins. Bridge holds 2. Min time?",
+        "tags": [
+            "Optimization"
+        ],
+        "difficulty": "Medium",
+        "hint": "Don't depend on the fastest person for every return trip.",
+        "solution": "17 mins. 1&2 cross (2). 1 returns (1). 5&10 cross (10). 2 returns (2). 1&2 cross (2)."
+    },
+    {
+        "id": "ants-stick",
+        "title": "Ants on a Stick",
+        "description": "100 ants on a 1m stick. They walk 1cm/s. When they collide, they bounce back. How long until the stick is empty?",
+        "tags": [
+            "Physics",
+            "Lateral Thinking"
+        ],
+        "difficulty": "Hard",
+        "hint": "Ants bouncing is indistinguishable from ants passing through each other.",
+        "solution": "100 seconds. Treat the ants as phantom particles passing through each other. max time is travel from 0 to 100cm."
+    },
+    {
+        "id": "box-of-socks",
+        "title": "Sock Drawer",
+        "description": "Drawer has 10 black and 10 white socks. Room is dark. How many to pull to guarantee a matching pair?",
+        "tags": [
+            "Probability",
+            "Easy"
+        ],
+        "difficulty": "Easy",
+        "hint": "Pigeonhole principle.",
+        "solution": "3 socks. You can get B, W, then the third MUST be either B or W, matching one of the first two."
+    },
+    {
+        "id": "light-switches-3",
+        "title": "The 3 Switches",
+        "description": "3 switches outside a room, 3 bulbs inside. You can flip switches but enter only once. Which switch is for which bulb?",
+        "tags": [
+            "Lateral Thinking"
+        ],
+        "difficulty": "Medium",
+        "hint": "Use heat.",
+        "solution": "Turn on A for 10 mins. Turn off A, turn on B. Enter. Lit = B. Warm = A. Cold = C."
+    },
+    {
+        "id": "barrel-of-beer",
+        "title": "Half Full Barrel",
+        "description": "A barrel has some beer. No measuring tools. How to tell if it's exactly half full?",
+        "tags": [
+            "Visual",
+            "Geometry"
+        ],
+        "difficulty": "Easy",
+        "hint": "Tip the barrel.",
+        "solution": "Tip the barrel until the liquid touches the rim. If the bottom of the barrel is just visible at the liquid edge, it's exactly half full."
+    },
+    {
+        "id": "burning-island",
+        "title": "The Burning Island",
+        "description": "You are on an island. Fire is moving west to east across the whole island. Strong west wind. You can't swim. How to survive?",
+        "tags": [
+            "Lateral Thinking"
+        ],
+        "difficulty": "Hard",
+        "hint": "Fight fire with fire.",
+        "solution": "Set fire to the eastern half. The wind blows it into the ocean. Walk onto the burnt ground. The main fire will stop at the burnt area."
+    },
+    {
+        "id": "elevator-puzzle",
+        "title": "The Elevator Man",
+        "description": "Man lives on 10th floor. Takes elevator down in morning. Returns in evening, takes elevator to 7th, walks to 10th. Unless it rains. Why?",
+        "tags": [
+            "Lateral Thinking"
+        ],
+        "difficulty": "Easy",
+        "hint": "He is physically limited.",
+        "solution": "He is a dwarf and can't reach the button for the 10th floor. He can reach the 7th. If it rains, he uses his umbrella to press 10."
+    },
+    {
+        "id": "manhole-covers",
+        "title": "Round Manhole Covers",
+        "description": "Why are manhole covers round?",
+        "tags": [
+            "Design",
+            "Logic"
+        ],
+        "difficulty": "Easy",
+        "hint": "Geometry.",
+        "solution": "A round cover cannot fall through its own opening, unlike a square one which can fall through diagonally."
+    },
+    {
+        "id": "bear-color",
+        "title": "Color of the Bear",
+        "description": "A hunter walks 1 mile south, 1 mile east, 1 mile north. Ends up where he started. Shoots a bear. What color is the bear?",
+        "tags": [
+            "Geography",
+            "Logic"
+        ],
+        "difficulty": "Medium",
+        "hint": "Where on Earth can you do that?",
+        "solution": "White. He is at the North Pole. The bear is a Polar Bear."
+    },
+    {
+        "id": "pill-mixup",
+        "title": "Blind Pill Mixup",
+        "description": "You need to take 1 A and 1 B. You have 2 A and 2 B in your hand, indistinguishable. How to save your dose?",
+        "tags": [
+            "Lateral Thinking"
+        ],
+        "difficulty": "Hard",
+        "hint": "You can crush them.",
+        "solution": "Crush all 4 pills into powder. Mix thoroughly. Split into two equal piles. Each pile contains 1 A and 1 B."
+    },
+    {
+        "id": "chessboard-dominoes",
+        "title": "Mutilated Chessboard",
+        "description": "Remove two opposite corners of a chessboard. Can you cover the remaining 62 squares with 31 dominoes (covering 2 squares each)?",
+        "tags": [
+            "Visual",
+            "Logic"
+        ],
+        "difficulty": "Medium",
+        "hint": "Colors of the squares.",
+        "solution": "No. Opposite corners are the same color. Remaining board has 32 of one color and 30 of the other. Dominoes always cover 1 black and 1 white."
+    },
+    {
+        "id": "hundred-doors",
+        "title": "100 Doors",
+        "description": "100 doors are closed. You walk by 100 times. 1st time toggles all. 2nd time toggles every 2nd. Nth time toggles every Nth. Which doors are open at the end?",
+        "tags": [
+            "Math",
+            "Pattern"
+        ],
+        "difficulty": "Medium",
+        "hint": "Count the number of divisors for each door number.",
+        "solution": "Doors 1, 4, 9, 16, 25, 36, 49, 64, 81, 100.\n\nOnly perfect squares have an odd number of factors (divisors). Doors with odd factors are toggled an odd number of times (Open). Others are toggled even times (Closed)."
+    },
+    {
+        "id": "measure-4l-3l-5l",
+        "title": "Measure 4 Liters",
+        "description": "You have a 3L bottle and a 5L bottle. Infinite water. Measure exactly 4 Liters.",
+        "tags": [
+            "Logic",
+            "Math"
+        ],
+        "difficulty": "Medium",
+        "hint": "Fill, pour, empty, transfer.",
+        "solution": "1. Fill 5L. Pour into 3L. (2L left in 5L).\n2. Empty 3L.\n3. Pour 2L from 5L into 3L. (2L in 3L bottle).\n4. Fill 5L. Pour into 3L until full (needs 1L). \n5. 5L bottle now has 4L left."
+    }
+]
