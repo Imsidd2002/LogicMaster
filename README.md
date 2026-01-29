@@ -2,8 +2,6 @@
 
 LogicMaster is a modern, interactive web application designed to challenge and sharpen your mind with the world's most famous logic puzzles. Built with React and Tailwind CSS, it offers a clean, distraction-free environment to solve riddles, math problems, and lateral thinking challenges.
 
-![LogicMaster Screenshot](public/logo.png)
-
 ## Features
 
 *   **Curated Collection**: Over 50 classic and modern puzzles including "The Monty Hall Problem", "Einstein's Riddle", "100 Prisoners", and more.
